@@ -1,0 +1,16 @@
+'''
+this code is going to be something along the lines of what the shooting range is suppossed to do
+the point of what this is suppossed to do is have the randomizers for the gun accuracy
+and for it to have the user input for the gun accuracy.
+there will be 5 different guns (kolibri, throwing knife, colt 1911, remington 11-87, and bow & arrow) 
+and all of them will have a different accuracy which will be decided by the random numberoptions each gun has 
+the larger the range of the number that has to be guessed the less accurate, and with each gun you only have 2 chances. 
+in the end you need 3 targets hit in order to get the key which starts up the next code. 
+'''
+
+kolibri = random.randint(1,50)
+throwknife = random.randint(1,25)
+bow_arrow = random.randint(1,15)
+colt = random.randint(1,10)
+remington = random.randint(1,5)
+
