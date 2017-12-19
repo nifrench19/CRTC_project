@@ -1,1 +1,24 @@
-def
+import math
+import random
+
+#dart_range is used to determine the range of how accerate the their throw is going to be
+def dart_range():
+    user = input("On a scale of 0 - 100, how hard do you want to throw the dart: ")
+    chance = random.radiant(0, 100)
+    range5 = 
+    range10 = 
+    range15 = 
+    range20 = (chance
+    range25 = (chance - 25 and chance + 25)
+    range30 = 
+    print(user)
+    if user > 100:
+        return ("Too stronk, wall will break. Lay it off a teensy bit there pal. Try again.")
+    elif user < 0:
+        return ("How could you actually throw this backwards, there's a reason why we keep the gun cabinet locked. Try again. ")
+    else:
+        if user == chance 
+            return ("CONGRADULATIONS!!! Today's your lucky day, because you automatically get access to the gun cabinet and now you get 3 shots instead of 2 for the range.")
+        elif range < user < :
+            
+        elif:
