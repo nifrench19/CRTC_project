@@ -8,9 +8,32 @@ the larger the range of the number that has to be guessed the less accurate, and
 in the end you need 3 targets hit in order to get the key which starts up the next code. 
 '''
 
-kolibri = random.randint(1,50)
+
 throwknife = random.randint(1,25)
 bow_arrow = random.randint(1,15)
 colt = random.randint(1,10)
 remington = random.randint(1,5)
+wheel_choices = ("kolibri", "throwing knife", "bow & arrow", "bow & arrow", "bow & arrow", "colt 1911", "colt 1911", "colt 1911", "remington 11-87")
+wheel_chance = random.choice(wheel_choices)
+
+if wheel_chance == "kolibri":
+  print "You have 6 shots in this magazine, better hope you're lucky cuz you have a 1 in 50 chance to hit"
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  for i in range(6)
+    kolibri = random.randint(1,50)
+  
+  
+if wheel_chance == "throwing knife":
+
+if wheel_chance == "bow & arrow":
+
+if wheel_chance == "colt 1911":
+
+if wheel_chance == "remington 11-87":
+
 
