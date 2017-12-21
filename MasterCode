@@ -1,11 +1,13 @@
 import math
 import random
 
-#dart_range is used to determine the range of how accerate the their throw is going to be
+'''
+dart_range is used to ask the user on how accerate the their throw is going to be 3 times,
+compares it to ranges 
+'''
 def dart_range():
     user = input("On a scale of 0 - 100, how hard do you want to throw the dart: ")
     chance = random.radiant(0, 100)
-    #Need better system to have range of chance + or - 5
     rangeoff5 = (chance - 5)
     rangeon5 = (chance + 5)
     rangeoff10 = (chance - 10)
@@ -19,7 +21,7 @@ def dart_range():
     rangeoff30 = (chance - 30)
     rangeon30 = (chance + 30)
     score = []
-    i = 1
+    i = 0
     
     for i in range(3):
         print(user)
@@ -35,28 +37,23 @@ def dart_range():
                 i += 1
             elif rangeoff25 < user < rangeon25:
                 score.append[6]
-                i++
             elif rangeoff20 < user < rangeon20:
                 score.append[8]
-                i++
             elif rangeoff15 < user < rangeon15:
                 score.append[12]
-                i++
             elif rangeoff10 < user < rangeon10:
                 score.append[14]
-                i++
             elif rangeoff5 < user < rangeon5:
                 score.append[18]
-                i++
             else:
                 return("YOU MISSED? HAHAHA NEEEEEERD, Try again.")
+        #i++
     
     var sum = score[[0], + [1], + [2]]
     for append in score():
-        sum()
+        print(sum)
 
-    if score == 32:
+    if score >= 32:
         return("You got above the required score for the accuracy, move on to the shooting range, the weapon wheel is now accessible.")
     else:
         return("Try again, the weapon wheel is still locked.")
-    
