@@ -10,21 +10,19 @@ def dart_range():
     user = input("On a scale of 0 - 100, how hard do you want to throw the dart?: ")
     user = int(user)
     chance = random.randint(0, 100)
-    rangeoff5 = (chance - 5)
-    rangeon5 = (chance + 5)
-    rangeoff10 = (chance - 10)
-    rangeon10 = (chance + 10)
-    rangeoff15 = (chance - 15)
-    rangeon15 = (chance + 15)
-    rangeoff20 = (chance - 20)
-    rangeon20 = (chance + 20)
-    rangeoff25 = (chance - 25)
-    rangeon25 = (chance + 25)
-    rangeoff30 = (chance - 30)
-    rangeon30 = (chance + 30)
+    range5 = (range((chance - 5), (chance + 5)))
+    range10 = (range((chance - 10), (chance + 10)))
+    range15 = (range((chance - 15), (chance + 15)))
+    range20 = (range((chance - 30), (chance + 30)))
+    range25 = (range((chance - 25), (chance + 25)))
+    range30 = (range((chance - 30), (chance + 30)))
+    
     score = []
     i = 0
+    inventory = []
     
+    
+    print(user)
     for i in range(3):
         if user > 100:
             return("Too stronk, wall will break. Lay it off a teensy bit there pal. Try again.")
@@ -33,7 +31,7 @@ def dart_range():
         else:
             if user == chance:
                 return("CONGRADULATIONS!!! Today's your lucky day, because you automatically get access to the weapon wheel and now you get an extra shot at the shooting range.")
-            elif rangeoff30 < user < rangeon30:
+            elif user == (rangeoff30 <= user <= rangeon30):
                 score.append[4]
                 #i += 1
             elif rangeoff25 < user < rangeon25:
@@ -56,5 +54,33 @@ def dart_range():
 
     if score >= 32:
         return("You got above the required score for the accuracy, move on to the shooting range, the weapon wheel is now accessible.")
+        inventory.append["WWkey"]
     else:
         return("Try again, the weapon wheel is still locked.")
+    
+    '''
+    if inventory[0] == "WWkey":
+        weapon_wheel = true
+    else:
+        weapon_wheel = false
+    
+    if inventory[1] == "GGDkey":
+        GGD = true
+    else:
+        GGD = false 
+    '''
+
+'''
+def tv:
+    channelList = ["The Daily Inspirer, Guns and Freedom Special, Bar Stool Sports, US TRUST WORTHY NEWS"]
+    channels = [1,2,3,4]
+    print("You look at the tv guide and it has " + channelList + " on.")
+    channelChoice = input("What do you want to watch?")
+    
+    print(channelChoice)
+    
+    if channelChoice != channels:
+        return 
+'''       
+        
+        
