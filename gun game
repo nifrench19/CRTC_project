@@ -1,0 +1,77 @@
+'''
+this code is going to be something along the lines of what the shooting range is suppossed to do
+the point of what this is suppossed to do is have the randomizers for the gun accuracy
+and for it to have the user input for the gun accuracy.
+there will be 5 different guns (kolibri, throwing knife, colt 1911, remington 11-87, and bow & arrow) 
+and all of them will have a different accuracy which will be decided by the random numberoptions each gun has 
+the larger the range of the number that has to be guessed the less accurate, and with each gun you only have 2 chances. 
+in the end you need 3 targets hit in order to get the key which starts up the next code. 
+'''
+
+def kolibri_random:
+    for i in range(6):
+      kolibri():
+def knife_random:
+    for i in range(5):
+      throwknife():
+def bow_random:
+    for i in range(3):
+      bow_arrow():
+def colt_random:
+    for i in range(2):
+      colt():
+def shotty_random:
+      remington():
+
+kolibri = random.rantint(1,50)
+throwknife = random.randint(1,25)
+bow_arrow = random.randint(1,15)
+colt = random.randint(1,10)
+remington = random.randint(1,5)
+wheel_choices = ("kolibri", "throwing knife", "bow & arrow", "bow & arrow", "bow & arrow", "colt 1911", "colt 1911", "colt 1911", "remington 11-87")
+wheel_chance = random.choice(wheel_choices)
+
+if wheel_chance == "kolibri":
+  print "You have 6 shots in this magazine, better hope you're lucky cuz you have a 1 in 50 chance to hit"
+  shot_one_kolibri = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_two_kolibri = int(input("Guess a number between 1 and 50 for your second shot"))
+  shot_three_kolibri = int(input("Guess a number between 1 and 50 for your third shot"))
+  shot_four_kolibri = int(input("Guess a number between 1 and 50 for your fourth shot"))
+  shot_five_kolibri = int(input("Guess a number between 1 and 50 for your fifth shot"))
+  shot_six_kolibri = int(input("Guess a number between 1 and 50 for your sixth shot"))
+  if kolibri_random == shot_one_kolibri || shot_two_kolibri || shot_three_kolibri || shot_four_kolibri || shot_five_kolibri || shot_six_kolibri:
+    
+  
+  
+if wheel_chance == "throwing knife":
+  print "You have 5 knives to throw, better hope you're lucky cuz you have a 1 in 25 chance to hit"
+  shot_one_knife = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_two_knife = int(input("Guess a number between 1 and 50 for your second shot"))
+  shot_three_knife = int(input("Guess a number between 1 and 50 for your third shot"))
+  shot_four_knife = int(input("Guess a number between 1 and 50 for your fourth shot"))
+  shot_five_knife = int(input("Guess a number between 1 and 50 for your fifth shot"))
+  if knife_random == shot_one_knife || shot_two_knife || shot_three_knife || shot_four_knife || shot_five_knife:
+    
+  
+if wheel_chance == "bow & arrow":
+  print "You have three shots in your quiver, better hope you're lucky cuz you have a 1 in 15 chance to hit"
+  shot_one_bow = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_two_bow = int(input("Guess a number between 1 and 50 for your second shot"))
+  shot_three_bow = int(input("Guess a number between 1 and 50 for your third shot"))
+  if bow_random == shot_one_bow || shot_two_bow || shot_three_bow:
+    
+
+
+if wheel_chance == "colt 1911":
+  print "You have 2 shots in this magazine, better hope you're lucky cuz you have a 1 in 10 chance to hit"
+  shot_one_colt = int(input("Guess a number between 1 and 50 for your first shot"))
+  shot_two_colt = int(input("Guess a number between 1 and 50 for your second shot"))
+  if colt_random == shot_one_colt || shot_two_colt:
+    
+
+
+if wheel_chance == "remington 11-87":
+  print "You have 1 shots in this big boy, better hope you're lucky cuz you have a 1 in 5 chance to hit"
+  shot_one_shotty = int(input("Guess a number between 1 and 50 for your only shot"))
+  if shotty_random == shot_one_shotty:  
+    
