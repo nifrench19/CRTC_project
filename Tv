@@ -9,9 +9,13 @@ def tv():
       channelChoice = int(input("What channel number do you want to watch? "))
   if channelChoice == channels[0]:
       print("Don't take life too seriously, you'll never get out of it alive - Nick French 2017")
+      movement()
   elif channelChoice == channels[1]:
       print("The shotgun has a 1 in 5 to hit, so reset the program until you get it from the weapon wheel.")
+      movement()
   elif channelChoice == channels[2]:
       print("Try to guess as much as possible, and if you get a score of 12 and above for one of the guesses, guess the same number and you're guaranteed to win. ")
+      movement()
   elif channelChoice == channels[3]:
       print("AS RACIST AMERICA'S LEADER DECLEARS NUCLEAR WAR ON KORTH NOREA, PREPARE FOR LOVING KINDNESS FROM OUR SUPREME OVERLORDS. TRUST US, WE'RE THE MEDIA, WE'RE THE TRUTH.")
+      movement()
