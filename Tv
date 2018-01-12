@@ -6,6 +6,7 @@ def tv():
 
   while channelChoice not in channels:
       print("Only thing you see is staic,  pick the available channels")
+      print("\n")
       channelChoice = int(input("What channel number do you want to watch? "))
   if channelChoice == channels[0]:
       print("Don't take life too seriously, you'll never get out of it alive - Nick French 2017")
