@@ -1,0 +1,94 @@
+import random
+
+def dart_board():
+    chance = random.randint(0, 100)
+    range5 = range((chance - 5), (chance + 6))
+    range10 = range((chance - 10), (chance + 11))
+    range15 = range((chance - 15), (chance + 16))
+    range20 = range((chance - 20), (chance + 21))
+    range25 = range((chance - 25), (chance + 26))
+    range30 = range((chance - 30), (chance + 31))
+    score = []
+    inventory = []
+    i = 0
+
+    dartArt = """\
+        ,-'''''-,    ,-----.
+      ,' \ _|_ / `.  | NLH |
+     /`.,'\ | /`.,'\ `-----'  |
+    (  /`. \|/ ,'\  )      |  H
+    |--|--;=@=:--|--|   |  H  U
+    (  \,' /|\ `./  )   H  U  |
+     \,'`./ | \,'`./    U  | (|)
+      `. / ''' \ ,'     | (|)
+        '-._|_,-`      (|)
+    """
+    print(dartArt)
+    chance = random.randint(0, 100)
+    print(chance)
+    print(range5)
+    print(range10)
+    print(range15)
+    print(range20)
+    print(range25)
+    print(range30)
+
+    for i in range(3):
+        user = input("On a scale of 0 - 100, how hard do you want to throw the dart?: ")
+        user = int(user)
+        if user == chance:
+            print("\n")
+            print("CONGRATULATIONS!!! Today's your lucky day, because you automatically get access to the weapon wheel and now you get an extra shot at the shooting range.")
+            print("\n")
+            print("You got the WWKey in your inventory")
+            inventory.append("WWkey")
+            break
+            movement()
+        elif user in range5:
+            score.append(18)
+            print("You guessed " + str(user))
+            print("You scored 18 points")
+            print("\n")
+        elif user in range10:
+            score.append(14)
+            print("You guessed " + str(user))
+            print("You scored 14 points")
+            print("\n")
+        elif user in range15:
+            score.append(12)
+            print("You guessed " + str(user))
+            print("You scored 12 points")
+            print("\n")
+        elif user in range20:
+            score.append(8)
+            print("You guessed " + str(user))
+            print("You scored 8 points")
+            print("\n")
+        elif user in range25:
+            score.append(6)
+            print("You guessed " + str(user))
+            print("You scored 6 points")
+            print("\n")
+        elif user in range30:
+            score.append(4)
+            print("You guessed " + str(user))
+            print("You scored 4 points")
+            print("\n")
+        else:
+            print("YOU MISSED? HAHAHA NEEEEEERD, Try again and to score more than 0.")
+            score.append(0)
+            print("You guessed " + str(user))
+            print("\n")
+        
+    sum = score[0] + score[1] + score[2]
+    print("Final score: " + str(sum))
+
+    if sum >= 32:
+        print("\n")
+        print("You got above the required score for the accuracy, move on to the shooting range, the weapon wheel is now accessible.")
+        print("\n")
+        print("You got the WWKey in your inventory")
+        inventory.append["WWkey"]
+    else:
+        print("\n")
+        print("Try again, the weapon wheel is still locked.")
