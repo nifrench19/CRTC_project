@@ -1,0 +1,17 @@
+def tv():
+  channelList = ("The Daily Inspirer on channel 1" + "\n" + "The Guns and Freedom Special on channel 2" + "\n" + "Bar Stool Sports on channel 3" + "\n" + "and US TRUST WORTHY NEWS on channel 4")
+  channels = [1,2,3,4]
+  print("You look at the tv guide and it has... " + "\n" + str(channelList))
+  channelChoice = int(input("What channel number do you want to watch? "))
+
+  while channelChoice not in channels:
+      print("Only thing you see is staic,  pick the available channels")
+      channelChoice = int(input("What channel number do you want to watch? "))
+  if channelChoice == channels[0]:
+      print("Don't take life too seriously, you'll never get out of it alive - Nick French 2017")
+  elif channelChoice == channels[1]:
+      print("The shotgun has a 1 in 5 to hit, so reset the program until you get it from the weapon wheel.")
+  elif channelChoice == channels[2]:
+      print("Try to guess as much as possible, and if you get a score of 12 and above for one of the guesses, guess the same number and you're guaranteed to win. ")
+  elif channelChoice == channels[3]:
+      print("AS RACIST AMERICA'S LEADER DECLEARS NUCLEAR WAR ON KORTH NOREA, PREPARE FOR LOVING KINDNESS FROM OUR SUPREME OVERLORDS. TRUST US, WE'RE THE MEDIA, WE'RE THE TRUTH.")
