@@ -1,9 +1,11 @@
 def rec_room():
     print("Welcome to the recreation room,\nhere you will play a game of darts where you will have to guess a \nnumber and the closer to the actual number you get, the more \npoints that come with it. After beating a bot score in darts, you \nwill go to the weapon wheel where it will randomly select a \nweapon for you to use at the gun range. Each gun has a different \namount of shots and the more shots it has the lower the chance of \nyou actually hitting the shot. You will have to successfully hit \nthree out of the five targets at the range in order to unlock the \ngreen glass door where you will have to answer a riddle in order \nto open the door and get into the next room.")
     print("\n")
-    ask = input("Do you want to go back out into the hallway or jump on to the S.S. \nAdventure with our room?: ")
+    ask = raw_input("Do you want to go back out into the hallway or jump on to the S.S. \nAdventure with our room?: ")
     
-    if ask == "Yes" or "yes" or "Yeah" or "yeah" or "Yea" or "yea":
+    if ask == "Yes":
+        print("Welcome to adventure, mystery, and fun in the rec room!")
         movement()
-    elif ask == "No" or "no" or "Nah" or "nah":
-        Commons()
+    elif ask == "No":
+        print("Going back into the hallway...")
+        commons()
