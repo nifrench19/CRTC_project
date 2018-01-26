@@ -1,0 +1,42 @@
+def GGD():
+
+  person = input('There is a green glass door in the middle of Minnesota.\n Only certain things can go through the door.\n What can go through? ')
+ 
+  #correct_letters = [bb, cc, dd, ee, ff, gg, kk, ll, mm, nn, oo, pp, rr, ss, tt, vv, zz]
+ 
+  if 'bb' in person:
+      print "Correct."
+  elif 'cc' in person:
+      print "Correct."
+  elif 'dd' in person:
+      print "Correct."
+  elif 'ee' in person:
+      print "Correct."
+  elif 'ff' in person:
+      print "Correct."
+  elif 'gg' in person:
+      print "Correct."
+  elif 'kk' in person:
+      print "Correct."
+  elif 'll' in person:
+      print "Correct."
+  elif 'mm' in person:
+      print "Correct."
+  elif 'nn' in person:
+      print "Correct."
+  elif 'oo' in person:
+      print "Correct."
+  elif 'pp' in person:
+      print "Correct."
+  elif 'rr' in person:
+      print "Correct."
+  elif 'ss' in person:
+      print "Correct."
+  elif 'tt' in person:
+      print "Correct."
+  elif 'vv' in person:
+      print "Correct."
+  elif 'zz' in person:
+      print "Correct."
+  else:
+      print "Incorrect."
